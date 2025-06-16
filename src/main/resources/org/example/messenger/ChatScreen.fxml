@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="503.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+
+    <!-- Бокова панель з користувачами -->
+    <VBox prefHeight="503.0" prefWidth="250.0" style="-fx-background-color: #6da27e;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <Label fx:id="MyName" alignment="CENTER" contentDisplay="TOP" prefHeight="32.0" prefWidth="250.0" text="USER NAME" textFill="#2e4536">
+         <font>
+            <Font name="Cascadia Mono Regular" size="16.0" />
+         </font></Label>
+        <TextField fx:id="SearchField" prefHeight="35.0" prefWidth="250.0" promptText="Search (Ctrl+K)" style="-fx-background-color: #deede3;">
+         <font>
+            <Font name="Cascadia Mono Regular" size="12.0" />
+         </font></TextField>
+        <ListView fx:id="userListView" prefHeight="439.0" prefWidth="250.0" style="-fx-background-color: #6da27e;" />
+    </VBox>
+
+    <!-- Основне вікно чату -->
+    <VBox spacing="10" AnchorPane.bottomAnchor="50" AnchorPane.leftAnchor="250" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+        <ScrollPane fitToWidth="true" style="-fx-background-color: #deede3;" VBox.vgrow="ALWAYS">
+            <VBox fx:id="chatMessages">
+                <padding>
+                    <Insets bottom="10" left="10" right="10" top="10" />
+                </padding>
+            </VBox>
+        </ScrollPane>
+    </VBox>
+
+    <!-- Поле введення повідомлення -->
+    <HBox layoutX="250.0" layoutY="438.0" prefHeight="66.0" prefWidth="550.0" spacing="10" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="0.0">
+        <padding>
+            <Insets bottom="10" left="10" right="10" top="10" />
+        </padding>
+        <TextField fx:id="messageField" promptText="Type a message..." style="-fx-background-color: #6da27e;" HBox.hgrow="ALWAYS" />
+        <Button fx:id="SendButton" style="-fx-background-color: #3e5c48;" text="Send" textFill="#deede3" />
+    </HBox>
+
+</AnchorPane>

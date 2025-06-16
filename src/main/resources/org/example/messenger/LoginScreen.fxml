@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="424.0" prefWidth="676.0" style="-fx-background-color: #7bc1a5;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.messenger.controllers.LoginController">
+   <children>
+      <TextField fx:id="IpAddress" layoutX="353.0" layoutY="161.0" opacity="0.84" prefHeight="26.0" prefWidth="174.0" style="-fx-background-color: #deede3;" />
+      <TextField fx:id="UserName" layoutX="353.0" layoutY="209.0" opacity="0.84" prefHeight="27.0" prefWidth="174.0" style="-fx-background-color: #deede3;" />
+      <Label layoutX="131.0" layoutY="209.0" prefHeight="26.0" prefWidth="150.0" text="User name:" textFill="#2e4536">
+         <font>
+            <Font name="Cascadia Mono Regular" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="131.0" layoutY="160.0" prefHeight="27.0" prefWidth="185.0" text="IP-адреса сервера:" textFill="#2e4536" wrapText="true">
+         <font>
+            <Font name="Cascadia Mono Regular" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="NextButton" layoutX="206.0" layoutY="300.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="245.0" style="-fx-background-color: #2e4536;" text="Почати спілкування" textFill="#deede3">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Label layoutX="19.0" layoutY="14.0" prefHeight="54.0" prefWidth="261.0" text="Pavlenger " textFill="#2e4536">
+         <font>
+            <Font name="Cascadia Mono Regular" size="44.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
